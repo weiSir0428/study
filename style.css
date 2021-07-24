@@ -44,6 +44,18 @@ body {
 	margin: auto;
 }
 
+.fixedbar {
+	position: fixed;
+	/*-600是版心宽度的一半 + 自己的宽度 + 任意给的边距*/
+	top: 200px;
+	left: 50%;
+	margin-left: -790px;
+	z-index: 999;
+	width: 180px;
+	height: 420px;
+	background-color: pink;
+}
+
 /*header start*/
 .header {
 	height: 42px;
@@ -271,6 +283,7 @@ body {
 }
 
 .box-bd li {
+	position: relative;
 	float: left;
 	width: 228px;
 	height: 270px;
@@ -282,6 +295,13 @@ body {
 
 .box-bd li img {
 	width: 100%;
+}
+
+.box-bd .hot {
+	position: absolute;
+	top: 5px;
+	right: -4px;
+	width: 40px;
 }
 
 .box-bd li h4 {
@@ -359,3 +379,4 @@ body {
 	color: #00a4ff;
 }
 /*footer end*/
+
